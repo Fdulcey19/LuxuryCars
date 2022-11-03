@@ -1,0 +1,35 @@
+.menu{
+    color:white;
+    
+}
+.boton_coleccion{
+    min-width: 75%;
+    background-color: rgb(209, 209, 209);
+    color: black;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.redes_icons i{
+    font-size: 20px;
+    color: gray;
+    margin: 0 10px;
+}
+.iconos_quienes_somos i{
+    color: white;
+}
+.redes_icons i:hover{
+    color: brown;
+}
+.card img {
+    max-height: 120px;
+}
+
+.carro-galeria{
+    max-height: 150px;
+}
+.derechos_aut{
+    max-height: 20px;
+}
+.logo{
+    
+}
