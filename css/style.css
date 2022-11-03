@@ -33,3 +33,12 @@
 a:hover{
     opacity: 0.8;
 }
+.logo{
+    padding: 0;
+    margin: 0;
+}
+.logo img{
+    max-height:40px;
+    padding:0;
+    left: -20px;
+}
