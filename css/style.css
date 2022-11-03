@@ -30,3 +30,6 @@
 .derechos_aut{
     max-height: 20px;
 }
+a:hover{
+    opacity: 0.8;
+}

@@ -14,51 +14,48 @@
 
 </head>
 <body>
+
 <!-- Nav Var -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">Luxury Cars</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto ">
-              <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="../dashboard/quienesSomos.html">Quienes somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="../dashboard/galeria.html">Galeria</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Categorias
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Deportivos</a></li>
-                  <li><a class="dropdown-item" href="#">Ejecutivos</a></li>
-                  <li><a class="dropdown-item" href="#">Camionetas</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">Login</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-<!-- Selector de filtros -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light logo" href="../index.html">Luxury Cars</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link  text-light" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" href="../dashboard/quienesSomos.html">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="../dashboard/galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="../dashboard/Login.html">Login</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
+<!-- Selector de filtros -->
+      <div class="container d-flex mt-3 justify-content-end">
+        <button class="btn-success rounded-3 me-3" onclick="filtros(filtro_select.value)">Filtrar</button>
+        
         <select class="form-select w-25" id="filtro_select" aria-label="Default select example">
-          <option selected>Abre este menú select</option>
-          <option value="ford">Fird</option>
-          <option value="2">Dos</option>
-          <option value="3">Tres</option>
+          <option selected>Seleccione Una Opción</option>
+          <option value="ford">Ford</option>
+          <option value="2">Chevrolet</option>
+          <option value="3">Toyota</option>
+          <option value="3">Porshe</option>
+          <option value="3">Mercedez</option>
+          <option value="3">Lamborghini</option>
+          <option value="3"></option>
+
         </select>
-      <div>
-      <button onclick="filtros(filtro_select.value)">Filtrar</button>
+      </div>
 <!-- Container Deportivos -->
     <div class="container border border-dark mt-5 p-3">
       <div class="row ">
@@ -68,7 +65,12 @@
             <div class="card" style="width: 18rem;">
                 <img src="../img/mustang.jpg" class="card-img-top carro-galeria" alt="...">
                 <div class="card-body">
-                <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                <p class="card-text">
+                  Mustang GT 5.0<br>
+                  Precio $125,000.000 <br>
+                  Km 18.000 <br>
+                  Puertas:	3 <br>
+                  Transmisión:	Automática</p>
             </div>
           </div>
           </div>
@@ -101,9 +103,9 @@
                 </div>
                 <div class="modal-body">
                   <p class="card-text fs-5">
-                    Mercedes-benz Cla 200 <br>
-                    Precio: $175,000.000 <br>
-                    Km: 15.000 <br>
+                    Mustang GT 5.0<br>
+                    Precio: $125,000.000 <br>
+                    Km: 18.000 <br>
                     Puertas:	3 <br>
                     Transmisión:	Automática <br>
                     Motor:	5.0</p>
@@ -120,31 +122,51 @@
             <div class="card" style="width: 18rem;">
                 <img src="../img/ferrari-458.jpg" class="card-img-top carro-galeria" alt="...">
                 <div class="card-body">
-                <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
-            </div>
+                  <p class="card-text">
+                    Ferrari 458 Spider<br>
+                    Precio $750,000.000 <br>
+                    Km 5.000 <br>
+                    Puertas:	3 <br>
+                    Transmisión:	Automática</p>
+                </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4 d-flex justify-content-center autos">
             <div class="card" style="width: 18rem;">
                 <img src="../img/lambo-blanco.jpg" class="card-img-top carro-galeria" alt="...">
                 <div class="card-body">
-                <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
-            </div>
+                  <p class="card-text">
+                    Lamborghini Huracan<br>
+                    Precio $675,000.000 <br>
+                    Km 8.000 <br>
+                    Puertas:	3 <br>
+                    Transmisión:	Automática</p>
+                </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4 d-flex justify-content-center autos">
             <div class="card" style="width: 18rem;">
                 <img src="../img/corvette.jpg" class="card-img-top carro-galeria" alt="...">
                 <div class="card-body">
-                <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
-            </div>
+                  <p class="card-text">
+                    Corvette<br>
+                    Precio $380,000.000 <br>
+                    Km 12.000 <br>
+                    Puertas:	3 <br>
+                    Transmisión:	Automática</p>
+                </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4 d-flex justify-content-center autos">
             <div class="card" style="width: 18rem;">
                 <img src="../img/camaro.jpg" class="card-img-top carro-galeria" alt="...">
                 <div class="card-body">
-                <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                <p class="card-text">
+                  Camaro<br>
+                  Precio $125,000.000 <br>
+                  Km 19.000 <br>
+                  Puertas:	3 <br>
+                  Transmisión:	Automática</p>
             </div>
           </div>
         </div>
@@ -152,7 +174,12 @@
             <div class="card" style="width: 18rem;">
                 <img src="../img/mclaren.jpg" class="card-img-top carro-galeria" alt="...">
                 <div class="card-body">
-                <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                <p class="card-text">
+                  Mclaren<br>
+                  Precio $1,275,000.000 <br>
+                  Km 3.000 <br>
+                  Puertas:	3 <br>
+                  Transmisión:	Automática</p>
             </div>
           </div>
         </div>
@@ -160,15 +187,25 @@
             <div class="card" style="width: 18rem;">
                 <img src="../img/porhse-718.jpg" class="card-img-top carro-galeria" alt="...">
                 <div class="card-body">
-                <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
-            </div>
+                  <p class="card-text">
+                    Porshe 718 GT<br>
+                    Precio $550,000.000 <br>
+                    Km 6.000 <br>
+                    Puertas:	3 <br>
+                    Transmisión:	Automática</p>
+                </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4 d-flex justify-content-center autos">
             <div class="card" style="width: 18rem;">
                 <img src="../img/porshe-911.jpg" class="card-img-top carro-galeria" alt="...">
                 <div class="card-body">
-                <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                <p class="card-text">
+                  Porshe 922 GT<br>
+                  Precio $780,000.000 <br>
+                  Km 7.000 <br>
+                  Puertas:	3 <br>
+                  Transmisión:	Automática</p>
             </div>
           </div>
         </div>
@@ -182,7 +219,12 @@
           <div class="card" style="width: 18rem;">
               <img src="../img/audi_a5.jpg" class="card-img-top carro-galeria" alt="...">
               <div class="card-body">
-              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+              <p class="card-text">
+                  Audi A5<br>
+                  Precio $450,000.000 <br>
+                  Km 13.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
           </div>
         </div>
       </div>
@@ -190,7 +232,12 @@
           <div class="card" style="width: 18rem;">
               <img src="../img/bmw-m5.jpg" class="card-img-top carro-galeria" alt="...">
               <div class="card-body">
-              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                <p class="card-text">
+                  BMW M5<br>
+                  Precio $650,000.000 <br>
+                  Km 19.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
           </div>
         </div>
       </div>
@@ -198,15 +245,25 @@
           <div class="card" style="width: 18rem;">
               <img src="../img/cadillac_sub.jpg" class="card-img-top carro-galeria" alt="...">
               <div class="card-body">
-              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
-          </div>
+                <p class="card-text">
+                  Cadillac<br>
+                  Precio $650,000.000 <br>
+                  Km 11.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
+              </div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4 d-flex justify-content-center autos">
           <div class="card" style="width: 18rem;">
               <img src="../img/bmw-m4.jpg" class="card-img-top carro-galeria" alt="...">
               <div class="card-body">
-              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+              <p class="card-text">
+                BMW M4<br>
+                Precio $350,000.000 <br>
+                Km 33.000 <br>
+                Puertas:	5 <br>
+                Transmisión:	Automática</p>
           </div>
         </div>
       </div>
@@ -214,7 +271,12 @@
           <div class="card" style="width: 18rem;">
               <img src="../img/lambo-urus.jpg" class="card-img-top carro-galeria" alt="...">
               <div class="card-body">
-              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                <p class="card-text">
+                  Lamborghini Urus<br>
+                  Precio $850,000.000 <br>
+                  Km 7.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
           </div>
         </div>
       </div>
@@ -222,7 +284,12 @@
           <div class="card" style="width: 18rem;">
               <img src="../img/astonMartin.jpg" class="card-img-top carro-galeria" alt="...">
               <div class="card-body">
-              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                <p class="card-text">
+                  Aston Martin<br>
+                  Precio $750,000.000 <br>
+                  Km 21.000 <br>
+                  Puertas:	2 <br>
+                  Transmisión:	Automática</p>
           </div>
         </div>
       </div>
@@ -230,15 +297,25 @@
           <div class="card" style="width: 18rem;">
               <img src="../img/bmw.jpg" class="card-img-top carro-galeria" alt="...">
               <div class="card-body">
-              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
-          </div>
+                <p class="card-text">
+                  Mercez CLA 200<br>
+                  Precio $350,000.000 <br>
+                  Km 25.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
+              </div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4 d-flex justify-content-center autos">
           <div class="card" style="width: 18rem;">
               <img src="../img/bently.jpg" class="card-img-top carro-galeria" alt="...">
               <div class="card-body">
-              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                <p class="card-text">
+                  Bently<br>
+                  Precio $650,000.000 <br>
+                  Km 14.000 <br>
+                  Puertas:	2 <br>
+                  Transmisión:	Automática</p>
           </div>
         </div>
       </div>
@@ -252,7 +329,12 @@
         <div class="card" style="width: 18rem;">
             <img src="../img/audi.jpg" class="card-img-top carro-galeria" alt="...">
             <div class="card-body">
-            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+            <p class="card-text">
+                  Audi Q8<br>
+                  Precio $575,000.000 <br>
+                  Km 12.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
         </div>
       </div>
     </div>
@@ -260,7 +342,12 @@
         <div class="card" style="width: 18rem;">
             <img src="../img/cadillac.jpg" class="card-img-top carro-galeria" alt="...">
             <div class="card-body">
-            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+            <p class="card-text">
+                  Cadillac<br>
+                  Precio $875,000.000 <br>
+                  Km 6.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
         </div>
       </div>
     </div>
@@ -268,7 +355,12 @@
         <div class="card" style="width: 18rem;">
             <img src="../img/txl-blanca.jpg" class="card-img-top carro-galeria" alt="...">
             <div class="card-body">
-            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+            <p class="card-text">
+                  TXL 2.8<br>
+                  Precio $275,000.000 <br>
+                  Km 54.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
         </div>
       </div>
     </div>
@@ -276,7 +368,12 @@
         <div class="card" style="width: 18rem;">
             <img src="../img/bmw-camioneta.jpg" class="card-img-top carro-galeria" alt="...">
             <div class="card-body">
-            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+            <p class="card-text">
+                  BMW X6<br>
+                  Precio $675,000.000 <br>
+                  Km 12.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
         </div>
       </div>
     </div>
@@ -284,7 +381,12 @@
         <div class="card" style="width: 18rem;">
             <img src="../img/ford-explorer.jpg" class="card-img-top carro-galeria" alt="...">
             <div class="card-body">
-            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+            <p class="card-text">
+                  Ford Explorer<br>
+                  Precio $275,000.000 <br>
+                  Km 34.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
         </div>
       </div>
     </div>
@@ -292,7 +394,12 @@
         <div class="card" style="width: 18rem;">
             <img src="../img/jeep.jpg" class="card-img-top carro-galeria" alt="...">
             <div class="card-body">
-            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+            <p class="card-text">
+                  Jeep Wrangler<br>
+                  Precio $275,000.000 <br>
+                  Km 34.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
         </div>
       </div>
     </div>
@@ -300,7 +407,12 @@
         <div class="card" style="width: 18rem;">
             <img src="../img/land-rover.jpg" class="card-img-top carro-galeria" alt="...">
             <div class="card-body">
-            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+            <p class="card-text">
+                  Land Rover<br>
+                  Precio $225,000.000 <br>
+                  Km 43.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
         </div>
       </div>
     </div>
@@ -308,7 +420,12 @@
         <div class="card" style="width: 18rem;">
             <img src="../img/lc-300.jpg" class="card-img-top carro-galeria" alt="...">
             <div class="card-body">
-            <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+            <p class="card-text">
+                  LC 300<br>
+                  Precio $875,000.000 <br>
+                  Km 3.000 <br>
+                  Puertas:	5 <br>
+                  Transmisión:	Automática</p>
         </div>
       </div>
     </div>
