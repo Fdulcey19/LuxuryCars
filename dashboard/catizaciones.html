@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,34 +17,59 @@
         }
 
         .cuerpo-cotizar {
-            background-image: url(../img/mustang-gt.jpg);
-            background-repeat: repeat;
+            background: url(../img/imgfondocotizar.jpg) no-repeat;
+            background-size: cover;
+           
         }
 
-        .container-inputs{
-        background-color: rgba(1,1,1,.8);
-        }
-
+       
         
     </style>
 </head>
-<body class="cuerpo-cotizar text-white">
-    <div class="container text-center container-inputs p-5 m-5 mt-8 mt-5">
-        <div class="container d-flex justify-content-center fs-4">
+<!-- Nav Var -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light logo" href="../index.html"><img src="../img/logo-sf.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link  text-light" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" href="../dashboard/quienesSomos.html">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="../dashboard/galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="../dashboard/Login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<body class="cuerpo-cotizar text-light ">
+    <div class="container text-center bg-dark bg-opacity-75 mt-3 pt-1 ps-5 pe-5 pb-5">
+        <div class="container  fs-4">
             <i class="bi bi-plus-square-fill me-2"></i>
             <p class="titulo">Nueva Cotizacion</p>
         </div>
-
-        <form class="row g-3  mt-5 was-validated mt-5 needs-validation">
-            <div class="col-md-5">
-                <label for="validacioRut" class="form-label">Atencion:</label>
+        <form class="row g-5  mt-3 needs-validation" novalidate>
+            <div class="col-md-6">
+                <label for="validacioRut" class="form-label">Atencion</label>
                 <input type="text" class="form-control" id="validacionRut" placeholder="Ingrese el Rut" required>
+                <div class="invalid-feedback">
+                    Por favor ingrese el Rut
+                </div>
                 
             </div>
 
-            <div class="col-md-5">
-                <label for="validacioRut" class="form-label" novalidate>Telefono:</label>
-                <input type="text" class="form-control" id="validacionRut" placeholder="Ingrese el Rut" required>
+            <div class="col-md-6">
+                <label for="validacioRut" class="form-label" novalidate>Telefono</label>
+                <input type="number" class="form-control" id="validacionRut" placeholder="Numero Telefono" required>
                 <div class="invalid-feedback">
                     Por favor ingrese el telefono
                 </div>
@@ -51,14 +78,11 @@
                 </div>
 
             </div>
-        </form>
-
-
-        <form class="row g-3  mt-4 needs-validation " novalidate >
+       
 
             <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">Empresa:</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Ingrese Nombres" required>
+                <label for="validationCustom01" class="form-label">Empresa</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre de la empresa" required>
                 <div class="invalid-feedback">
                     Por favor ingrese nombre de la empresa
                 </div>
@@ -68,8 +92,8 @@
             </div>
 
             <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Telefono Empresa:</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Ingrese Apellidos"
+                <label for="validationCustom02" class="form-label">Telefono Empresa</label>
+                <input type="number" class="form-control" id="validationCustom02" placeholder="Telefono empresa"
                     required>
                     <div class="invalid-feedback">
                         Por favor ingrese el telefono de la empresa
@@ -82,7 +106,7 @@
             <div class="col-md-4">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email Empresa</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo de la empresa" required>
                     <div class="invalid-feedback">
                         Por favor ingrese el correo
                     </div>
@@ -120,7 +144,7 @@
 
             <div class="col-md-4">
                 <label for="validationCustom01" class="form-label">Telefono</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Ingrese su Telefono"
+                <input type="number" class="form-control" id="validationCustom01" placeholder="Ingrese su Telefono"
                     required>
                     <div class="invalid-feedback">
                         Por favor ingrese el telefono
@@ -131,30 +155,33 @@
             </div>
             <!-- Boton -->
             <div class="mt-5 col-12 rounded-3 text-white fs-5 ms- data-bs-toggle modal-body ">
-                <button type="submit" class="btn btn-primary">Cotizar</button>
+                <button type="submit" class="btn btn-primary" id="btn-cotizar">Cotizar</button>
             </div>
-            <!-- Modal -->
-            <div class="modal fade text-dark " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Cotización Exitosa</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="text-center">Su Cotización ha sido realizada con exito</p>
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                            <a href="../dashboard/galeria.html"><button type="button"
-                                class="btn btn-primary bg-success">Continuar</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+         
         </form>
-        <!-- Bootstrap JS -->
-        <script src="../js/form-validation.js"></script>
        
+          <!-- Modal -->
+          <div class="modal fade text-dark " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Cotización Exitosa</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <p class="text-center">Su Cotización ha sido realizada con exito</p>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                      <a href="../dashboard/galeria.html"><button type="button"
+                          class="btn btn-primary bg-success">Continuar</button></a>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
-</body>
+
+    <script src="../js/cotizaciones.js"></script>
+    
+    </body>
+    </html>
