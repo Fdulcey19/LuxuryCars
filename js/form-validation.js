@@ -1,13 +1,13 @@
 
+
 const botton2 = document.getElementById('botton-registrar');
 botton2.addEventListener('click', ()=>{
-
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
   'use strict'
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
+  var forms = document.querySelectorAll('.needs-validation');
   const modal = document.getElementById("modal-alert-registro");
   const modal_registro = document.getElementById("modal-usuario-registro");
  
@@ -30,9 +30,9 @@ botton2.addEventListener('click', ()=>{
 })()
 
 });
+
 const botton = document.getElementById('botton-iniciar-sesion');
 botton.addEventListener('click', ()=>{
-
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
   'use strict'
@@ -53,3 +53,8 @@ botton.addEventListener('click', ()=>{
 })()
 
 });
+
+
+
+
+
