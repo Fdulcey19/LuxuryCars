@@ -64,6 +64,7 @@
 
     @media (max-width: 992px) {
       body {
+        
         background: url(../img/Familia.jpg) no-repeat;
         justify-content: center;
       }
@@ -100,7 +101,7 @@
   </div>
 </nav>
 <body>
-  <div class="contenedor-login">   
+  <div class="contenedor-login bg-dark bg-opacity-75">   
   <!-- Inicio Sesion -->
   <div class="container bg-dark bg-opacity-75 pt-3 m-0 " id="contenedor_form">
 
@@ -196,9 +197,14 @@
       <!-- Modal Registrarse -->
       <div id="modal-usuario-registro">
         <div class="modal-dialog ">
-          <div class="modal-content">
-            <form class="needs-validation contenedor-registro rounded-3" action="" novalidate>
+          <div class="modal-content ">
+            <form class="needs-validation contenedor-registro rounded-3" action="" novalidate>              
               <div class="row g-3  text-white  p-4 rounded-3 bg-dark bg-opacity-75">
+                <div class="w-100 d-flex justify-content-end ">
+                  <button type="button" class="btn-close bg-light" style="width: 20px; height: 20px;" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                
                 <img src="../img/logo-sf.png" alt="Logo" class=" pb-3 mt-0">
                 <hr class=" bg-white">
                 <h3 class="text-center pb-3">Regístrate</h3>
