@@ -21,6 +21,15 @@
             background-size: cover;
            
         }
+        .modal-alert-cotizacion{
+            
+            display: none;
+        }
+        .modal-alert-cotizacion1{
+            display: flex;
+        }
+
+
 
        
         
@@ -51,13 +60,30 @@
       </div>
     </div>
   </nav>
-<body class="cuerpo-cotizar text-light ">
+<body class="cuerpo-cotizar text-light position-relative  ">
+    <!-- Modal -->  
+   <div class="modal-alert-cotizacion bg-dark bg-opacity-50 text-dark align-items-start justify-content-center  position-fixed w-100 h-100" id="modal-alert-cotizacion">
+    <div class="modal-content w-50 rounded-3 bg-light">
+        <div class="modal-header pb-4">
+            <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Cotización Exitosa</h5>
+            
+        </div>
+        <div class="modal-body pb-3">
+            <p class="text-center">Su Cotización ha sido realizada con exito</p>
+        </div>
+        <div class="modal-footer d-flex justify-content-center pb-3">
+            <a href="../dashboard/galeria.html"><button type="button"
+                class="btn btn-primary bg-success">Continuar</button></a>
+        </div>
+    </div>            
+</div>
+
     <div class="container text-center bg-dark bg-opacity-75 mt-3 pt-1 ps-5 pe-5 pb-5">
         <div class="container  fs-4">
             <i class="bi bi-plus-square-fill me-2"></i>
             <p class="titulo">Nueva Cotizacion</p>
         </div>
-        <form class="row g-5  mt-3 needs-validation" novalidate>
+        <form class="row g-5  mt-3 needs-validation  " novalidate>
             <div class="col-md-6">
                 <label for="validacioRut" class="form-label">Atencion</label>
                 <input type="text" class="form-control" id="validacionRut" placeholder="Ingrese el Rut" required>
@@ -154,33 +180,15 @@
                     </div>
             </div>
             <!-- Boton -->
-            <div class="mt-5 col-12 rounded-3 text-white fs-5 ms- data-bs-toggle modal-body ">
+            <div class="mt-5 col-12 rounded-3 text-white ">
                 <button type="submit" class="btn btn-primary" id="btn-cotizar">Cotizar</button>
             </div>
          
+         
         </form>
        
-          <!-- Modal -->
-          <div class="modal fade text-dark " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Cotización Exitosa</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                      <p class="text-center">Su Cotización ha sido realizada con exito</p>
-                  </div>
-                  <div class="modal-footer d-flex justify-content-center">
-                      <a href="../dashboard/galeria.html"><button type="button"
-                          class="btn btn-primary bg-success">Continuar</button></a>
-                  </div>
-              </div>
-          </div>
-      </div>
     </div>
-
+   
     <script src="../js/cotizaciones.js"></script>
     
     </body>
