@@ -71,8 +71,15 @@
 
       #contenedor_form {
         width: 100%;
+      height: 92vh;
       }
     }
+    @media (min-width: 856px) {
+      .con_inicio{
+        min-height: 92.5vh;
+      }
+    }
+
   </style>
 </head>
 <!-- Nav Var -->
@@ -101,7 +108,7 @@
   </div>
 </nav>
 <body>
-  <div class="contenedor-login bg-dark bg-opacity-75">   
+  <div class="contenedor-login bg-dark bg-opacity-75 con_inicio">   
   <!-- Inicio Sesion -->
   <div class="container bg-dark bg-opacity-75 pt-3 m-0 " id="contenedor_form">
 
@@ -310,7 +317,6 @@
       </div>
     </div>
   </div>
-</div>
 <script src="../js/form-validation.js"></script>
 </body>
 </html>
