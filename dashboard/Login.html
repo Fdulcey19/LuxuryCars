@@ -71,43 +71,30 @@
 
       #contenedor_form {
         width: 100%;
+      height: 100vh;
       }
     }
+    @media (min-width: 856px) {
+      .con_inicio{
+        min-height: 100vh;
+      }
+    }
+
   </style>
 </head>
-<!-- Nav Var -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand text-light logo" href="../index.html"><img src="../img/logo-sf.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto ">
-        <li class="nav-item">
-          <a class="nav-link  text-light" aria-current="page" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active text-light" href="../dashboard/quienesSomos.html">Quienes somos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="../dashboard/galeria.html">Galeria</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="../dashboard/Login.html">Login</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 <body>
-  <div class="contenedor-login bg-dark bg-opacity-75">   
+  <div class="contenedor-login bg-dark bg-opacity-75 con_inicio">   
   <!-- Inicio Sesion -->
   <div class="container bg-dark bg-opacity-75 pt-3 m-0 " id="contenedor_form">
-
+    <div class="d-flex justify-content-center align-items-center">
+      <a href="../index.html" class="d-flex justify-content-center w-50">
+        <img src="../img/logo-sf-recorte.png" class=" w-100 bg-opacity-50" style="border-radius: 10px;" alt="">
+      </a>
+    </div>
+    <hr class=" bg-light ">
     <form class="row g-2 needs-validation" action="../index.html" novalidate>
       <div class="text-center w-100">
-        <h2 class="h2 pt-4 pb-5 f">Iniciar Sesion</h2>
+        <h3 class="h3  pb-3 pt-2 f">Iniciar Sesion</h3>
         
       </div>
       <!-- Nombre Usuario -->
@@ -165,7 +152,7 @@
         </div>
       </div>
     </div>
-    <p class="mt-5 text-center">&copy; 2022–2030</p>
+    <p class="mt-4 text-center">&copy; 2022–2030</p>
   </div>
 <!-- -------------------------------------------------------------------------------------------------- -->
   <!-- Registro -->
@@ -310,7 +297,6 @@
       </div>
     </div>
   </div>
-</div>
 <script src="../js/form-validation.js"></script>
 </body>
 </html>
